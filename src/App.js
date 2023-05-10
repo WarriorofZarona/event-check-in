@@ -47,7 +47,7 @@ function App() {
         <Row>
           <Col>
             <ListGroup>
-              {attendance.sort((a,b) => a.child > b.child ? 1 : -1).map(({ child, numOfAdults, isPresent, isMember }, index) => <ListItem key={index} index={index} child={child} numOfAdults={numOfAdults} isPresent={isPresent} isMember={isMember} totalPresent={totalPresent} setTotalPresent={setTotalPresent} saveData={saveData} />
+              {attendance.map(({ child, numOfAdults, isPresent, isMember }, index) => <ListItem key={index} index={index} child={child} numOfAdults={numOfAdults} isPresent={isPresent} isMember={isMember} totalPresent={totalPresent} setTotalPresent={setTotalPresent} saveData={saveData} />
               )}</ListGroup>
           </Col>
         </Row>
